@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS App</title>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Optional: Set a default font */
+        }
+        h1 {
+            margin: 0; /* Remove default margin */
+            padding: 10px; /* Add some padding to the title */
+            background-color: #f0f0f0; /* Optional: Set a background color */
+            text-align: center; /* Center the title text */
+        }
+        iframe {
+            border: none; /* Remove iframe border */
+            width: 100vw; /* Full viewport width */
+            height: calc(100vh - 50px); /* Full viewport height minus header height */
+            display: block; /* Ensure iframe takes up space */
+        }
+    </style>
+</head>
+<body ng-controller="MainController">
+    <h1>AngularJS App</h1>
+    <!-- Embed Angular app using iframe -->
+    <iframe id="appIframe" src="\browser\index.html"></iframe>
+
+    <!-- AngularJS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
